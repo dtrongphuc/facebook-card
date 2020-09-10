@@ -1,3 +1,45 @@
-.title {
-	color: red;
+@import '/assets/scss/variables';
+
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: $head-height;
+	padding: 0 16px;
+}
+
+.left {
+	display: flex;
+	align-items: center;
+}
+
+.top {
+	margin-bottom: 2px;
+}
+
+.bottom {
+	margin-top: 2px;
+}
+
+.avatar {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-image: url('/assets/img/avatar.jpeg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-right: 8px;
+}
+
+.name {
+	color: $primary-color;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.timestamp {
+	color: $secondary-color;
+	font-size: 13px;
 }
