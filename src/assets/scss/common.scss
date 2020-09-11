@@ -1,6 +1,19 @@
+@import 'variables';
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 body {
 	background-color: #f0f2f5;
 	font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -29,4 +42,13 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@mixin btn {
+	display: block;
+	cursor: pointer;
+	background-color: transparent;
+	&:hover {
+		background-color: $btn-hover-color;
+	}
 }

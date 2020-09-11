@@ -20,14 +20,17 @@ export default function Head() {
 					<div className={style.bottom}>
 						<div className={style.timeStampWrapper}>
 							<a href='/' className={style.timestamp}>
-								25 tháng 8 lúc 19:55
+								25 tháng 8 lúc 19:55 .
 							</a>
 						</div>
 						<div className={style.status}></div>
 					</div>
 				</div>
 			</div>
-			<div className={style.right}></div>
+			<div className={style.right}>
+				<i className={style.more}></i>
+				<span className={`${style.btn} ${style['btn-more']}`}></span>
+			</div>
 		</div>
 	);
 }

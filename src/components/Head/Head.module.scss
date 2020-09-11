@@ -1,4 +1,4 @@
-@import '/assets/scss/variables';
+@import '/assets/scss/common';
 
 .head {
 	display: flex;
@@ -14,12 +14,28 @@
 	align-items: center;
 }
 
+.right {
+	position: relative;
+}
+
 .top {
 	margin-bottom: 2px;
 }
 
 .bottom {
+	display: flex;
+	align-items: center;
 	margin-top: 2px;
+}
+
+.status {
+	background-image: url('/assets/img/status.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	width: 12px;
+	height: 12px;
+	background-position: 0px -1086px;
+	filter: opacity(0.6);
 }
 
 .avatar {
@@ -42,4 +58,30 @@
 .timestamp {
 	color: $secondary-color;
 	font-size: 13px;
+	font-weight: 400;
+	margin-right: 4px;
+}
+
+.more {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-image: url('/assets/img/more.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.btn {
+	@include btn;
+}
+
+.btn-more {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
