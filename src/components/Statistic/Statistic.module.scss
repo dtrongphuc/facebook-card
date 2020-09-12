@@ -1,0 +1,38 @@
+@import '/assets/scss/common';
+
+.statistic {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 43px;
+	width: 100%;
+	padding: 0 16px;
+}
+
+.reaction {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	&-img {
+		width: 18px;
+		height: 18px;
+		margin-left: -2px;
+	}
+}
+
+.count-text {
+	color: $secondary-color;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.mr8 {
+	margin-right: 8px;
+}
+
+.comment-count,
+.shared-count {
+	font-size: 15px;
+}

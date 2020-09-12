@@ -1,0 +1,46 @@
+@import '/assets/scss/common';
+
+.bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 16px;
+	padding-top: 4px;
+	border-top: 1px solid #ced0d4;
+}
+
+.btn {
+	@include btn;
+	display: flex;
+	padding: 6px 30px;
+	border-radius: 4px;
+}
+
+.text {
+	color: $secondary-color;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.icon {
+	background-image: url('/assets/img/status.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 8px;
+	filter: opacity(0.6);
+}
+
+.like {
+	background-position: 0 -288px;
+}
+
+.comment {
+	background-position: 0 -212px;
+}
+
+.share {
+	background-position: 0 -345px;
+}
